@@ -1,0 +1,29 @@
+[
+  {
+    "id": "ORD-1042",
+    "items": [
+      { "id": "latte", "name": "Vanilla Latte", "quantity": 2 },
+      { "id": "croissant", "name": "Butter Croissant", "quantity": 1 }
+    ],
+    "total": 12.7,
+    "statusLabel": "Bar Pickup"
+  },
+  {
+    "id": "ORD-1043",
+    "items": [
+      { "id": "sandwich", "name": "Garden Sandwich", "quantity": 1 },
+      { "id": "lemonade", "name": "Pink Lemonade", "quantity": 2 }
+    ],
+    "total": 15.4,
+    "statusLabel": "Kitchen Queue"
+  },
+  {
+    "id": "ORD-1044",
+    "items": [
+      { "id": "matcha", "name": "Matcha Cloud", "quantity": 1 },
+      { "id": "brownie", "name": "Fudge Brownie", "quantity": 2 }
+    ],
+    "total": 11.8,
+    "statusLabel": "Ready to Serve"
+  }
+]

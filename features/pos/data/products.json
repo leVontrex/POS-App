@@ -1,0 +1,10 @@
+[
+  { "id": "latte", "name": "Vanilla Latte", "price": 4.9, "category": "Coffee", "color": "#F5D6BA", "sortOrder": 0 },
+  { "id": "americano", "name": "Iced Americano", "price": 3.8, "category": "Coffee", "color": "#D2E4F2", "sortOrder": 1 },
+  { "id": "matcha", "name": "Matcha Cloud", "price": 5.4, "category": "Tea", "color": "#D9E9C5", "sortOrder": 2 },
+  { "id": "croissant", "name": "Butter Croissant", "price": 2.9, "category": "Bakery", "color": "#F6E2A4", "sortOrder": 3 },
+  { "id": "bagel", "name": "Salmon Bagel", "price": 6.5, "category": "Kitchen", "color": "#F2D0C7", "sortOrder": 4 },
+  { "id": "brownie", "name": "Fudge Brownie", "price": 3.2, "category": "Dessert", "color": "#DCC8B5", "sortOrder": 5 },
+  { "id": "lemonade", "name": "Pink Lemonade", "price": 4.1, "category": "Cold Drinks", "color": "#F9D4DA", "sortOrder": 6 },
+  { "id": "sandwich", "name": "Garden Sandwich", "price": 7.2, "category": "Kitchen", "color": "#DDEACD", "sortOrder": 7 }
+]

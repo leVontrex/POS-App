@@ -1,33 +1,62 @@
+import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import { Tabs } from 'expo-router';
 import React from 'react';
 
 import { HapticTab } from '@/components/haptic-tab';
-import { IconSymbol } from '@/components/ui/icon-symbol';
-import { Colors } from '@/constants/theme';
-import { useColorScheme } from '@/hooks/use-color-scheme';
+
+const palette = {
+  active: '#B85042',
+  inactive: '#8F7A6A',
+  background: '#FFF8F1',
+  border: '#E8D8C8',
+};
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
-
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: false,
         tabBarButton: HapticTab,
+        tabBarActiveTintColor: palette.active,
+        tabBarInactiveTintColor: palette.inactive,
+        tabBarStyle: {
+          backgroundColor: palette.background,
+          borderTopColor: palette.border,
+          height: 68,
+          paddingBottom: 10,
+          paddingTop: 10,
+        },
+        tabBarLabelStyle: {
+          fontSize: 12,
+          fontWeight: '700',
+        },
       }}>
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          title: 'Ordering System',
+          tabBarIcon: ({ color, size }) => <MaterialIcons color={color} name="point-of-sale" size={size} />,
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="monitor"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'Order Monitor',
+          tabBarIcon: ({ color, size }) => <MaterialIcons color={color} name="sticky-note-2" size={size} />,
+        }}
+      />
+      <Tabs.Screen
+        name="history"
+        options={{
+          title: 'History',
+          tabBarIcon: ({ color, size }) => <MaterialIcons color={color} name="history" size={size} />,
+        }}
+      />
+      <Tabs.Screen
+        name="inventory"
+        options={{
+          title: 'Inventory',
+          tabBarIcon: ({ color, size }) => <MaterialIcons color={color} name="inventory-2" size={size} />,
         }}
       />
     </Tabs>
